@@ -1,0 +1,53 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+
+<style>
+    html,body{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+    }
+
+    #map1{
+        float: left;
+        width: 800px;
+        margin-left: 6%;
+        margin-top: 5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0 10px 10px -5px;
+        border-radius: 10px;
+        background-color: #E1FFDF;
+    }
+    #map2{
+        float: right;
+        height: 550.8px;
+        width: 800px;
+        margin-right: 6%;
+        margin-top: 5%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0 10px 10px -5px;
+        border-radius: 10px;
+        background-color: #E1FFDF;
+    }
+</style>
+<body>
+        <div class="container" id="map1">
+            <h4 class="text-center">Crime Mapping for all Crimes</h4>
+            <p class="text-center">Insert Description here.</p>
+            {{map1 | safe}}
+        </div>
+         <div class="container" id="map2">
+            <h4 class="text-center">Most Probable Crime per Region</h4>
+             <p class="text-center">Insert Description here.</p>
+            {{map2 | safe}}
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
